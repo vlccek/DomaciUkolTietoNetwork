@@ -33,7 +33,7 @@ def transformData(data:dict):
 def writeToFile(data:dict):
   newdata = transformData(data)
   newdataoutput = str(newdata)
-  with open("/output/out.html", "w") as f:
+  with open("../output/out.html", "w") as f:
       page = '''<!DOCTYPE html>
       <html>
       <head>
