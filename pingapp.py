@@ -33,7 +33,7 @@ def transformData(data:dict):
 def writeToFile(data:dict):
   newdata = transformData(data)
   newdataoutput = str(newdata)
-  with open("out.html", "w") as f:
+  with open("/output/out.html", "w") as f:
       page = '''<!DOCTYPE html>
       <html>
       <head>
@@ -113,7 +113,7 @@ def main():
 
   while(True):
     for i in data['ipAddress']:
-      r = os.system('ping -c 1 ' + i +"> /dev/null")
+      r = os.system('ping -c 1 ' + i )
       if not outputstatus.get(i):
         outputstatus[i] = {}
       if not outputstatus[i].get('countTotal'):

@@ -1,2 +1,4 @@
-.vscode
+docker-compose.debug.yml
+output/out.html
+.vscode/
 out.html
