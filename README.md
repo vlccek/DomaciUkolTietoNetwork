@@ -11,4 +11,19 @@ The Script reads end point from input.json:
 ```
 
 ## Output File
-The script writes information for each end point and 
+The script writes information for each end points to folder ouput to file out.html
+![Show of output](https://i.imgur.com/hDdN3FW.png)
+
+`Internet connection requried`
+
+## Docker instruction:
+
+### Build:
+```bash
+docker-compose build 
+```
+
+### Run:
+```bash
+docker-compose up
+```
